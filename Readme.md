@@ -54,7 +54,7 @@ It's a native feature that lacks in Unity for years. I will try later using the 
 
 ## Techniques / Assets / Scripts
 
-##Intro scene -intro##
+### Intro scene -intro
 
 **Menu**
 
@@ -84,7 +84,7 @@ There are also some canvas in the forest/game scene.
 
 The muscic is fade out with a coroutine then another coroutine is launched to display the loader asynchronously. The same loader is used on the two scenes. There aren't specic script for this scene, it uses the same than in the next so they will be detailled there.
 
-##Game scene - forest##
+### Game scene - forest##
 
 **The terrain**
 
@@ -190,11 +190,11 @@ So I've bought this [soundtrack](https://freetousesounds.bandcamp.com/track/fore
 
 This royalty free song from [Whitesand](https://www.youtube.com/watch?v=_hSyRMyqFOM) is used for the intro.
 
-##To do
+## To do
 
 - [] Menu to allow to change keys binding (querty/azerty - wasd/zqsd)
 
-##Music / Sounds credit
+## Music / Sounds credit
 
 - Whitesand - Drops (Royalty and Copyright Free) - [Youtube](https://www.youtube.com/watch?v=_hSyRMyqFOM) / [Facebook](https://www.facebook.com/martynlaur) / [Twitter](https://twitter.com/MartynLaur) / [Instagram](https://www.instagram.com/martynas_lau/) / [SoundCloud](https://soundcloud.com/martynaslau)
 

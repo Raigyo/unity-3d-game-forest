@@ -35,7 +35,7 @@ public class GameController : MonoBehaviour
 
     public ScriptableVars scriptableVars;//scriptable object ref
 
-    private Dictionary<string, KeyCode> keys = new Dictionary<string, KeyCode>();
+    //private Dictionary<string, KeyCode> keys = new Dictionary<string, KeyCode>();
 
     void Start()
     {
@@ -53,7 +53,12 @@ public class GameController : MonoBehaviour
         musicPlayer = musicToFade.GetComponent<AudioSource>();
         StartCoroutine(AudioController.FadeIn(musicPlayer, 1.5f));
         //update activated to check if the sound is playing, needed to launch the preloader afted fading out the sound
-        stopUpdate = false;        
+        stopUpdate = false;
+        //Reset the time for Enviro
+        if (scene.buildIndex != 0)
+        {
+            EnviroSkyLite.instance.SetInternalTimeOfDay(15.0f);
+        }
     }
 
     public void Update()
@@ -120,22 +125,22 @@ public class GameController : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         //Display win pannel
         endGamePanel.SetActive(true);
-        endGameTitle.text = "Congratulations!";
+        endGameTitle.text = "congratulations!";
         print("minutes: " + minutes);
         if (minutes == 0)
         {
-            endGameText.text = "You picked up all the " + cans.ToString() + " cans in " + seconds + " seconds!";
+            endGameText.text = "you picked up all the " + cans.ToString() + " cans in " + seconds + " seconds!";
         }
         else
         {
-            endGameText.text = "You picked up all the " + cans.ToString() + " cans in " + minutes + " minute(s) and " + seconds + " second(s)!";
+            endGameText.text = "you picked up all the " + cans.ToString() + " cans in " + minutes + " minute(s) and " + seconds + " second(s)!";
         }
     }
 
     //Forest - LOST: hide some GO and display lost message / try again - back to menu
     public void LostGame(int cans)
     {
-        print("Lost! Cans:" + cans);
+        print("Lost! cans:" + cans);
         //Freeze the game - Disable scripts that still work while timescale is set to 0
         Time.timeScale = 0;        
         //all these elements are disabled
@@ -150,15 +155,15 @@ public class GameController : MonoBehaviour
         endGameTitle.text = "It's late...";
         if (cans > 1)
         {
-            endGameText.text = "Time to come back home... You picked up: " + cans.ToString() + " cans!";
+            endGameText.text = "time to come back home... you picked up: " + cans.ToString() + " cans!";
         }
         else if (cans == 1)
         {
-            endGameText.text = "Time to come back home... You picked up: " + cans.ToString() + " can!";
+            endGameText.text = "time to come back home... you picked up: " + cans.ToString() + " can!";
         }
         else
         {
-            endGameText.text = "Time to come back home... You picked up nothing!";
+            endGameText.text = "time to come back home... you picked up nothing!";
         }        
     }
 
@@ -176,6 +181,7 @@ public class GameController : MonoBehaviour
         rubbish.SetActive(false);
         scoreAndTimeController.SetActive(false);
     }
+
 
     //Intro: open and close settings tab - settiings not implemented
     public void openSettings()

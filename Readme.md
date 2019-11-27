@@ -2,7 +2,9 @@
 
 *November 2019 - Development time: 2 and half weeks*
 
-> 🔨 Game made with Unity 3D. In this game you walk in a forest and you decided to clean the rubbish to preserve nature. So pick up all the soda  cans in the allotted time. It's an original game, not inspired by a totorial. By the way I used tons of tutorials and websites to help during the developpement.
+> 🔨 Game made with Unity 3D. In this game you walk in a forest and you decided to clean the rubbish to preserve nature. So pick up all the soda  cans in the allotted time.
+ It's an original game, not inspired by a totorial. By the way I used tons of tutorials and websites to help during the development.
+ The gameplay is quite basic, but the mecanics including navigation, introduction, sound design are the same than in a commercial game. The 3D environments and animations are quite high grade.
 
 * * *
 
@@ -18,11 +20,11 @@ Some scripts used are in the [script folder](https://github.com/Raigyo/unity-3d-
 
 ## 2. About
 
-This game was made to show my skills using Unity 3D and what's it's possible to do with it. This game has a peaceful atmosphere and educational virtues. It's usually the kind of game that inspires institutionnal or non-profit organizations as clients.
+This game was made to show my skills using Unity 3D and what's it's possible to do with it. This game has a peaceful atmosphere and educational virtues. It's usually the kind of game / application that inspires institutionnal or non-profit organizations as clients.
 
 It's a desktop version. It would be possible to make that kind of game for mobiles or web browsers (WegGL), but the quality should be downgraded.
 
-This game has been tested again and again and again... But if you have advises or if you see bugs/problems, please contact me using the issue button on this repository.
+This game has been tested again and again and again... But if you have advises or if you see bugs / problems, please contact me using the issue button on this repository.
 
 ### 2.1. How to play
 
@@ -30,23 +32,23 @@ This game has been tested again and again and again... But if you have advises o
 
 Walk in the forest and grap the 30 cans within 10 minutes.
 
-Use the zqsd/arrows key (see Settings about that part) to move and your mouse to look around. You can help yoursel with the minimap that displays can that are near you.
+Use the zqsd / arrows key (see 2.1.3 Settings about that part) to move and your mouse to look around. You can help yoursel with the minimap that displays can that are near you.
 
 If you win or fail, a menu is displayed asking you if you want to try again or go back to menu.
 
 Other features:
 
-- F2: show/hide Minimap
+- 'F2': show/hide Minimap
 
-- Escape/P: show/hide pause menu with continue or back to menu.
+- 'Escape' / 'P': show/hide pause menu with continue or back to menu.
 
 #### 2.1.2 Walking mode (Free mode)
 
 No cans to pickup or timer, just walk and discover the landscape using the same keys than in game mode.
 
-- F2: show/hide pannel that allows you to choose the time of the day (uses Enviro demo pannel)
+- Choose the time of the day with 'F2' / 'F3' / 'F4' (morning / afternoon /evening)
 
-- Escape/P: show/hide pause menu with continue or back to menu.
+- 'Escape' / 'P': show / hide pause menu with continue or back to menu.
 
 #### 2.1.3 Menu: Settings
 

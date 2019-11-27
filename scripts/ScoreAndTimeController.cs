@@ -34,7 +34,7 @@ public class ScoreAndTimeController : MonoBehaviour
         goRubbishCount = goRubbishCount / 2; //divided by 2 because all prefabs have a children with icon
         //Displays counter of can grabbed
         count = 0;
-        countText.text = "Cans: " + count.ToString() + "/" + goRubbishCount;
+        countText.text = "cans: 0" + count.ToString() + "/" + goRubbishCount;
     }
 
     void Update()
@@ -48,7 +48,7 @@ public class ScoreAndTimeController : MonoBehaviour
             int seconds = Mathf.FloorToInt(timer % 60);
             //string formattedTime = string.Format("{0:00}:{1:00}:{2:00}", hours, minutes, seconds);
             string formattedTime = string.Format("{0:00}:{1:00}", minutes, seconds);
-            timerText.text = "Time: " + formattedTime;
+            timerText.text = "time: " + formattedTime;
             if (timer < 60.0f)
             {
                 timerText.color = Color.red;
@@ -68,13 +68,19 @@ public class ScoreAndTimeController : MonoBehaviour
     public void SetCountText()
     {
         count++;
-        countText.text = "Cans: " + count.ToString() + "/" + goRubbishCount;
+        if (count<10)
+        {
+            countText.text = "cans: 0" + count.ToString() + "/" + goRubbishCount;
+        }
+        else
+        {
+            countText.text = "cans: " + count.ToString() + "/" + goRubbishCount;
+        }
         if (goRubbishCount == count)
         {
             float finalTime = mainTimer - timer;
             minutesFinal = Mathf.FloorToInt((finalTime % 3600) / 60);
             secondsFinal = Mathf.FloorToInt(finalTime % 60);
-            print("Win!");
             Invoke("DelayWin", 2);
         }
     }

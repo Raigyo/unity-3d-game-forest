@@ -12,7 +12,7 @@ using TMPro;
 public class ActionKeysManager : MonoBehaviour
 {
     [SerializeField] private GameObject pausePanel;//pause pannel reference
-    [SerializeField] private GameObject timePanel;//time pannel reference
+    //[SerializeField] private GameObject timePanel;//time pannel reference
     [SerializeField] private GameObject miniMap;//minimap reference
     [SerializeField] private GameObject fpsControler;//ref to fpsControler to disable it
     [SerializeField] private GameObject hitBehaviour;//ref to hitbahaviour to disable raycast
@@ -25,7 +25,7 @@ public class ActionKeysManager : MonoBehaviour
         //set pause pannel unactive
         pausePanel.SetActive(false);
         //set time pannel unactive
-        timePanel.SetActive(false);    
+        //timePanel.SetActive(false);    
     }
 
     void Update()
@@ -58,22 +58,22 @@ public class ActionKeysManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F2) && Time.timeScale == 1 && scriptableVars.walkingMode == true)
         {
-            if (!timePanel.activeInHierarchy)
-            {
-                timePanel.SetActive(true);
-                fpsControler.GetComponent<FirstPersonControllerEdited>().enabled = false;
-                Cursor.visible = true;
-                Cursor.lockState = CursorLockMode.None;
-            }
-            else
-            {
-                timePanel.SetActive(false);
-                fpsControler.GetComponent<FirstPersonControllerEdited>().enabled = true;
-                Cursor.visible = false;
-                Cursor.lockState = CursorLockMode.Locked;
-            }
+            //EnviroSkyLite.instance.SetTime(2018, 1, 6, 0, 0);
+            EnviroSkyLite.instance.SetInternalTimeOfDay(7.0f);
         }
-        //enable / disable minimap using 'F2' key
+
+        if (Input.GetKeyDown(KeyCode.F3) && Time.timeScale == 1 && scriptableVars.walkingMode == true)
+        {
+            //EnviroSkyLite.instance.SetTime(2018, 1, 15, 0, 0);
+            EnviroSkyLite.instance.SetInternalTimeOfDay(14.0f);
+        }
+
+        if (Input.GetKeyDown(KeyCode.F4) && Time.timeScale == 1 && scriptableVars.walkingMode == true)
+        {
+            //EnviroSkyLite.instance.SetTime(2018, 1, 20, 0, 0);
+            EnviroSkyLite.instance.SetInternalTimeOfDay(20.0f);
+        }
+        //switch between time of the day
     }
 
     public void PauseGame()
@@ -83,7 +83,7 @@ public class ActionKeysManager : MonoBehaviour
         fpsControler.GetComponent<FirstPersonControllerEdited>().enabled = false;
         hitBehaviour.SetActive(false);
         crossHair.SetActive(false);
-        timePanel.SetActive(false);
+        //timePanel.SetActive(false);
         //all these elements are disabled
         pausePanel.SetActive(true);
         //set pause pannel active

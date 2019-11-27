@@ -214,7 +214,7 @@ This royalty free song from [Whitesand](https://www.youtube.com/watch?v=_hSyRMyq
 
 *-------*
 
-## 5. Music & Sounds credit
+## 5. Music & Sounds credits
 
 - Whitesand - Drops (Royalty and Copyright Free) - [Youtube](https://www.youtube.com/watch?v=_hSyRMyqFOM) / [Facebook](https://www.facebook.com/martynlaur) / [Twitter](https://twitter.com/MartynLaur) / [Instagram](https://www.instagram.com/martynas_lau/) / [SoundCloud](https://soundcloud.com/martynaslau)
 

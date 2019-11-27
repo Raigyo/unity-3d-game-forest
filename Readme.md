@@ -6,7 +6,7 @@
 
 * * *
 
-## Installation
+## 1. Installation
 
 Download the zip with the game [here](https://xxx) and unzip it on your computer. Then launch xxx.exe.
 
@@ -14,7 +14,9 @@ Or watch the gameplay video on [here](https://xxx).
 
 Some scripts used are in the script folder on this repository.
 
-## About
+*-------*
+
+## 2. About
 
 This game was made to show my skills using Unity 3D and what's it's possible to do do with it. This game has a peaceful atmosphere and educational virtues. It's usually the kind of game that inspires institutionnal or non-profit organizations as clients.
 
@@ -52,11 +54,13 @@ Not implemented yet. It would allow to change keys. Numerous tests have been mad
 
 It's a native feature that lacks in Unity for years. I will try later using the asset [Rewired](https://assetstore.unity.com/packages/tools/utilities/rewired-21676) that is more powerful thant the input management of Unity, even the new one in preview.
 
-## Techniques / Assets / Scripts
+*-------*
 
-### Intro scene -intro
+## 3. Techniques / Assets / Scripts
 
-**Menu**
+### 3.1 Intro scene -intro
+
+#### 3.1.1 Menu
 
 You can select between game mode or walking mode.
 
@@ -64,7 +68,7 @@ The game selected is managed by Scriptable Objects (that can be sused as 'global
 
 The two versions of the game a just one scene with some GameObjects displayed or not according to the boolean value in the Scriptable Objects. This value is reset each time we comme back to the ontro scene.
 
-**Cinematic**
+#### 3.1.2 Cinematic
 
 This scene has been made using the Unity additionnal package [Cinemachine](https://unity.com/fr/unity/features/editor/art-and-design/cinemachine).
 
@@ -74,19 +78,19 @@ The lanscape is the same the the one used in the game. The result is displayed a
 
 To make quality cinematics can be a long process... Here it's far to be perfect, you could see some speed variation during the cinematic...
 
-**Canvas**
+#### 3.1.3 Canvas
 
 A basic canvas is used as overlay to display buttons and informations, with some scripting and EventSystem components, including tooltips.
 
 There are also some canvas in the forest/game scene.
 
-**Loader**
+#### 3.1.4 Loader
 
 The muscic is fade out with a coroutine then another coroutine is launched to display the loader asynchronously. The same loader is used on the two scenes. There aren't specic script for this scene, it uses the same than in the next so they will be detailled there.
 
-### Game scene - forest##
+### 3.2 Game scene - forest
 
-**The terrain**
+#### 3.2.1 The terrain
 
 This game uses [Forest Environment - Dynamic Nature](https://assetstore.unity.com/packages/3d/vegetation/forest-environment-dynamic-nature-150668) from [NatureManufacture](https://assetstore.unity.com/publishers/6887).
 
@@ -98,7 +102,7 @@ The terrain is surrounded by moutain and there is a slope detection to avoid pla
 
 By the way, I made like all developers, I added... invisible walls! (just in case).
 
-**Minimap**
+#### 3.2.1 Minimap
 
 The game use a minimap in the GTA style to display the rubbish to collect. The minimap is made with a ortographic camera above the player.
 
@@ -108,7 +112,9 @@ To improve performances, this camera uses occlusion culling (so what is not in f
 
 Markers are GameObjects in the prefab of cans. The main camera displays the layer with the rubbish and the minimap only these markers.
 
-**Script: HitBehaviour.cs - //HitBehaviour: Raycast on GO that can be picked-up / Highlight GO**
+#### 3.2.2 Script: HitBehaviour.cs
+
+//HitBehaviour: Raycast on GO that can be picked-up / Highlight GO
 
 Script that uses raycast to find if we hit an object on the 'rubbish' layer (cans). It calls an other script when we click on an grabbable object.
 
@@ -116,7 +122,9 @@ It's also used to change the material on grabble object when the raycast hits it
 
 It's also in this script that I cound the cans grabbed. I can define if all the cans have been picked up. It could be managed in another script, but It was  the easiest way for me to avoid to increase the score if the player would click several times... The rubbish are children of a GameObject (used like a kind of folder). I don't have to specify how many GO there are in it because I count them in the script. BTW It's divided by 2 because each prefab has two GO, the rubbish and its icon (for the minimap)...
 
-**Script: GrabObject.cs - // GrabObject: animation / sound / set the object unactive**
+#### 3.2.3 Script: GrabObject.cs
+
+// GrabObject: animation / sound / set the object unactive
 
 Script used to grap the object following a guide put on the FPSPlayer component.
 
@@ -124,7 +132,9 @@ When the mouse button is released the script set inactive the icon on minimap im
 
 It's also in that script that the sound is played.
 
-**Script: ScoreAndTimeController.cs - //ScoreAndTimeController : counter and score management / detect if lost or win**
+#### 3.2.4 Script: ScoreAndTimeController.cs
+
+//ScoreAndTimeController : counter and score management / detect if lost or win**
 
 Coundown that converts deltaTime in minutes / seconds. Delta time can be specified in the inspector.
 
@@ -132,7 +142,9 @@ Score displaying according to the total of GO contained in the rubbish GO.
 
 It's also that calss that controls if the player has won or lost.
 
-**Script: GameController.cs - //GameController : counter and score management / display messages and pannels /show hide some elements
+#### 3.2.3 Script: GameController.cs
+
+//GameController : counter and score management / display messages and pannels /show hide some elements
 
 This script manage many things: display or hide elements according to the situation.
 
@@ -146,11 +158,15 @@ This script manage many things: display or hide elements according to the situat
 
 - Manage the launch of sound fade in / fade out
 
-**Script: ActionKeysManager.cs - //ActionKeysManager: Manage the keyboard shortcuts ingame and what's displayed / hidden then**
+#### 3.2.4 Script: ActionKeysManager.cs
+
+//ActionKeysManager: Manage the keyboard shortcuts ingame and what's displayed / hidden then**
 
 Used for the pause menu, the displaying of the minimap or the time selector pannel.
 
-**Script: SlopeDetection.cs - //SlopeDetection: Finds the slope/grade/incline angle of ground underneath a CharacterController**
+#### 3.2.5 Script: SlopeDetection.cs
+
+//SlopeDetection: Finds the slope/grade/incline angle of ground underneath a CharacterController**
 
 I used and modified this [script] (https://gist.github.com/jawinn/f466b237c0cdc5f92d96) to detect the slope using a raycast behind the player. so i can set the high of jump according to the slope/ incline angle of ground underneath.
 
@@ -158,19 +174,19 @@ I used and modified this [script] (https://gist.github.com/jawinn/f466b237c0cdc5
 
 Script to display tooltips. The content (title+content) is managed in a component on the GO.
 
-**Footstep sounds**
+#### 3.2.6 Footstep sounds
 
 I use the asset [Dynamic Footsteps for first person games](https://assetstore.unity.com/packages/tools/dynamic-footsteps-for-first-person-games-85052) to manage footstep sounds. Not expensive and very useful.
 
 With that asset you can define sounds played randomly for some layers only. BTW I had to adjust or create some colliders (primitive/mesh) on some GameObjects (water and bridges). According to me it's more easy to add colliders on a layer than define texture that will interact with a raycast  (textures can be numerous or be changed by the designer / raycast could... not work on every cases) . I've tried several solutions, this one convinced me.
 
-**Time of the day**
+#### 3.2.7 Time of the day
 
 During the game, the time goes by...
 
 I use the following asset for that: [Hendrik Haupt - Enviro - Sky and Weather](https://assetstore.unity.com/packages/tools/particles-effects/enviro-sky-and-weather-33963)
 
-**Optimization**
+### 3.3 Optimization
 
 Scripts avoid to use *GameObject.FindGameObjectsWithTag* or *GameObject.Find* methods but use public variables that can be accessed from the inspector.
 
@@ -180,7 +196,7 @@ There is occlusion culling on the FPS camera (the computer calculate only what's
 
 A lot of asset in hierarchy use LOD (Level of Detail) that *reduces the load on the hardware and improves the rendering performance*.
 
-**Sound design**
+### 3.4 Sound design
 
 Excepted in the profesionnal gaming industry, I've noticed that the sound design is often neglected.
 
@@ -190,11 +206,15 @@ So I've bought this [soundtrack](https://freetousesounds.bandcamp.com/track/fore
 
 This royalty free song from [Whitesand](https://www.youtube.com/watch?v=_hSyRMyqFOM) is used for the intro.
 
-## To do
+*-------*
+
+## 4. To do
 
 - [] Menu to allow to change keys binding (querty/azerty - wasd/zqsd)
 
-## Music / Sounds credit
+*-------*
+
+## 5. Music & Sounds credit
 
 - Whitesand - Drops (Royalty and Copyright Free) - [Youtube](https://www.youtube.com/watch?v=_hSyRMyqFOM) / [Facebook](https://www.facebook.com/martynlaur) / [Twitter](https://twitter.com/MartynLaur) / [Instagram](https://www.instagram.com/martynas_lau/) / [SoundCloud](https://soundcloud.com/martynaslau)
 
@@ -204,9 +224,9 @@ This royalty free song from [Whitesand](https://www.youtube.com/watch?v=_hSyRMyq
 
 - [Zapsplat / Free sound effects & royalty free music](https://www.zapsplat.com/)
 
-## Asset / Sounds
+*-------*
 
-**Assets purchased and used**
+## 6. Asset & Sounds used
 
 - [NatureManufacture  - Forest Environment - Dynamic Nature](https://assetstore.unity.com/packages/3d/vegetation/forest-environment-dynamic-nature-150668)
 
@@ -222,7 +242,9 @@ This royalty free song from [Whitesand](https://www.youtube.com/watch?v=_hSyRMyq
 
 - [Hendrik Haupt - Enviro - Sky and Weather](https://assetstore.unity.com/packages/tools/particles-effects/enviro-sky-and-weather-33963)
 
-##Useful links / Greetings
+*-------*
+
+## 7. Useful links & Greetings
 
 - [Unity Learn](https://learn.unity.com/)
 
@@ -250,7 +272,9 @@ This royalty free song from [Whitesand](https://www.youtube.com/watch?v=_hSyRMyq
 
 - [TUTO UNITY FR](https://www.youtube.com/channel/UCJRwb5W4ZzG43J5_dViL6Fw)
 
-##Contact (Github / Linked In)
+*-------*
+
+## 8.Contact (Github / Linked In)
 
 - [My Github](https://github.com/Raigyo)
 - [My LinkedIn](https://www.linkedin.com/in/vincent-chilot/)

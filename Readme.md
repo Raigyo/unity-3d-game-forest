@@ -18,15 +18,15 @@ Some scripts used are in the script folder on this repository.
 
 ## 2. About
 
-This game was made to show my skills using Unity 3D and what's it's possible to do do with it. This game has a peaceful atmosphere and educational virtues. It's usually the kind of game that inspires institutionnal or non-profit organizations as clients.
+This game was made to show my skills using Unity 3D and what's it's possible to do with it. This game has a peaceful atmosphere and educational virtues. It's usually the kind of game that inspires institutionnal or non-profit organizations as clients.
 
 It's a desktop version. It would be possible to make that kind of game for mobiles or web browsers (WegGL), but the quality should be downgraded.
 
 This game has been tested again and again and again... But if you have advises or if you see bugs/problems, please contact me using the issue button on this repository.
 
-**How to play**
+### 2.1. How to play
 
-*Menu: Playing game (Game mode)*
+#### 2.1.1 Playing game (Game mode)
 
 Walk in the forest and grap the 30 cans within 10 minutes.
 
@@ -40,7 +40,7 @@ Other features:
 
 - Escape/P: show/hide pause menu with continue or back to menu.
 
-*Menu: Walking mode (Free mode)*
+#### 2.1.2 Walking mode (Free mode)
 
 No cans to pickup or timer, just walk and discover the landscape using the same keys than in game mode.
 
@@ -48,7 +48,7 @@ No cans to pickup or timer, just walk and discover the landscape using the same 
 
 - Escape/P: show/hide pause menu with continue or back to menu.
 
-*Menu: Settings*
+#### 2.1.3 Menu: Settings
 
 Not implemented yet. It would allow to change keys. Numerous tests have been made to create a remapping/rebinding feature in game, but without finding a solution.
 
@@ -58,7 +58,7 @@ It's a native feature that lacks in Unity for years. I will try later using the 
 
 ## 3. Techniques / Assets / Scripts
 
-### 3.1 Intro scene -intro
+### 3.1 Intro scene (scene name: intro)
 
 #### 3.1.1 Menu
 
@@ -88,7 +88,7 @@ There are also some canvas in the forest/game scene.
 
 The muscic is fade out with a coroutine then another coroutine is launched to display the loader asynchronously. The same loader is used on the two scenes. There aren't specic script for this scene, it uses the same than in the next so they will be detailled there.
 
-### 3.2 Game scene - forest
+### 3.2 Game scene (scene name: forest)
 
 #### 3.2.1 The terrain
 

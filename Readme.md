@@ -1,4 +1,4 @@
-# Unity 3D / C# / Visual Studio - Original Game development - 'Grab the cans' (demo)
+# Unity 3D / C# / Visual Studio - Original game development - 'A Forest' aka 'Grab the cans' (demo)
 
 *November 2019 - Development time: 2 weeks*
 
@@ -12,7 +12,7 @@ Download the zip with the game [here](https://xxx) and unzip it on your computer
 
 Or watch the gameplay video on [here](https://xxx).
 
-Some scripts used are in the script folder on this repository.
+Some scripts used are in the [script folder](https://github.com/Raigyo/unity-3d-game-forest/tree/master/scripts) on this repository.
 
 *-------*
 
@@ -112,7 +112,7 @@ To improve performances, this camera uses occlusion culling (so what is not in f
 
 Markers are GameObjects in the prefab of cans. The main camera displays the layer with the rubbish and the minimap only these markers.
 
-#### 3.2.2 Script: HitBehaviour.cs
+#### 3.2.2 Script: [HitBehaviour.cs](scripts/HitBehaviour.cs)
 
 //HitBehaviour: Raycast on GO that can be picked-up / Highlight GO
 
@@ -122,7 +122,7 @@ It's also used to change the material on grabble object when the raycast hits it
 
 It's also in this script that I cound the cans grabbed. I can define if all the cans have been picked up. It could be managed in another script, but It was  the easiest way for me to avoid to increase the score if the player would click several times... The rubbish are children of a GameObject (used like a kind of folder). I don't have to specify how many GO there are in it because I count them in the script. BTW It's divided by 2 because each prefab has two GO, the rubbish and its icon (for the minimap)...
 
-#### 3.2.3 Script: GrabObject.cs
+#### 3.2.3 Script: [GrabObject.cs](scripts/GrabObject.cs)
 
 // GrabObject: animation / sound / set the object unactive
 
@@ -132,7 +132,7 @@ When the mouse button is released the script set inactive the icon on minimap im
 
 It's also in that script that the sound is played.
 
-#### 3.2.4 Script: ScoreAndTimeController.cs
+#### 3.2.4 Script: [ScoreAndTimeController.cs](scripts/ScoreAndTimeController.cs)
 
 //ScoreAndTimeController : counter and score management / detect if lost or win**
 
@@ -142,7 +142,7 @@ Score displaying according to the total of GO contained in the rubbish GO.
 
 It's also that calss that controls if the player has won or lost.
 
-#### 3.2.3 Script: GameController.cs
+#### 3.2.3 Script: [GameController.cs](scripts/GameController.cs)
 
 //GameController : counter and score management / display messages and pannels /show hide some elements
 
@@ -158,19 +158,21 @@ This script manage many things: display or hide elements according to the situat
 
 - Manage the launch of sound fade in / fade out
 
-#### 3.2.4 Script: ActionKeysManager.cs
+#### 3.2.4 Script: [ActionKeysManager.cs](scripts/ActionKeysManager.cs)
 
 //ActionKeysManager: Manage the keyboard shortcuts ingame and what's displayed / hidden then**
 
 Used for the pause menu, the displaying of the minimap or the time selector pannel.
 
-#### 3.2.5 Script: SlopeDetection.cs
+#### 3.2.5 Script: [SlopeDetection.cs](scripts/SlopeDetection.cs)
 
 //SlopeDetection: Finds the slope/grade/incline angle of ground underneath a CharacterController**
 
-I used and modified this [script] (https://gist.github.com/jawinn/f466b237c0cdc5f92d96) to detect the slope using a raycast behind the player. so i can set the high of jump according to the slope/ incline angle of ground underneath.
+I used and modified this [script](https://gist.github.com/jawinn/f466b237c0cdc5f92d96) to detect the slope using a raycast behind the player. so i can set the high of jump according to the slope/ incline angle of ground underneath.
 
-**Script: ToolTips.cs - //ToolTips: displays tooltip on menu when a button is hovered**
+#### 3.2.6 [ToolTips.cs](scripts/ToolTips.cs)
+
+//ToolTips: displays tooltip on menu when a button is hovered**
 
 Script to display tooltips. The content (title+content) is managed in a component on the GO.
 
@@ -178,7 +180,7 @@ Script to display tooltips. The content (title+content) is managed in a componen
 
 I use the asset [Dynamic Footsteps for first person games](https://assetstore.unity.com/packages/tools/dynamic-footsteps-for-first-person-games-85052) to manage footstep sounds. Not expensive and very useful.
 
-With that asset you can define sounds played randomly for some layers only. BTW I had to adjust or create some colliders (primitive/mesh) on some GameObjects (water and bridges). According to me it's more easy to add colliders on a layer than define texture that will interact with a raycast  (textures can be numerous or be changed by the designer / raycast could... not work on every cases) . I've tried several solutions, this one convinced me.
+With that asset you can define sounds played randomly for some layers only. BTW I had to adjust or create some colliders (primitive / mesh) on some GameObjects (water and bridges). According to me it's more easy to add colliders on a layer than define texture that will interact with a raycast  (textures can be numerous or be changed by the designer / raycast could... not work on every cases) . I've tried several solutions, this one convinced me.
 
 #### 3.2.7 Time of the day
 

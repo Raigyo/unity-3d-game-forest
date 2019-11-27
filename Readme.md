@@ -1,9 +1,9 @@
-# Unity 3D / C# / Visual Studio - Original game development - 'A Forest' aka 'Grab the cans' (demo)
+# Unity 3D / C# / Visual Studio - Original game development - 'A Forest' aka 'Grab the cans'
 
 *November 2019 - Development time: 2 and half weeks*
 
 > 🔨 Game made with Unity 3D. In this game you walk in a forest and you decided to clean the rubbish to preserve nature. So pick up all the soda  cans in the allotted time.
- It's an original game, not inspired by a totorial. By the way I used tons of tutorials and websites to help during the development.
+ It's an original game, not inspired by a tutorial. By the way I used tons of tutorials and websites to help during the development.
  The gameplay is quite basic, but the mecanics including navigation, introduction, sound design are the same than in a commercial game. The 3D environments and animations are quite high grade.
 
 * * *
@@ -46,7 +46,7 @@ Other features:
 
 No cans to pickup or timer, just walk and discover the landscape using the same keys than in game mode.
 
-- Choose the time of the day with 'F2' / 'F3' / 'F4' (morning / afternoon /evening)
+- Choose the time of the day with 'F2' / 'F3' / 'F4' (morning / afternoon / evening)
 
 - 'Escape' / 'P': show / hide pause menu with continue or back to menu.
 
@@ -160,6 +160,8 @@ This script manage many things: display or hide elements according to the situat
 
 - Manage the launch of sound fade in / fade out
 
+Note to myself: don't forget 'Event Listener' if you use GUI.
+
 #### 3.2.4 Script: [ActionKeysManager.cs](scripts/ActionKeysManager.cs)
 
 //ActionKeysManager: Manage the keyboard shortcuts ingame and what's displayed / hidden then**
@@ -189,6 +191,8 @@ With that asset you can define sounds played randomly for some layers only. BTW 
 During the game, the time goes by...
 
 I use the following asset for that: [Hendrik Haupt - Enviro - Sky and Weather](https://assetstore.unity.com/packages/tools/particles-effects/enviro-sky-and-weather-33963)
+
+Note to myself: uncheck 'don't destroy on load' on Enviro manager to reset all datas and reactivate them by scripting.
 
 ### 3.3 Optimization
 

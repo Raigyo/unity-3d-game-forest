@@ -226,7 +226,7 @@ This royalty free song from [Whitesand](https://www.youtube.com/watch?v=_hSyRMyq
 
 *-------*
 
-## 6. Asset used
+## 6. Assets used
 
 - [NatureManufacture  - Forest Environment - Dynamic Nature](https://assetstore.unity.com/packages/3d/vegetation/forest-environment-dynamic-nature-150668)
 

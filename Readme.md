@@ -1,6 +1,6 @@
 # Unity 3D / C# / Visual Studio - Original game development - 'A Forest' aka 'Grab the cans' (demo)
 
-*November 2019 - Development time: 2 weeks*
+*November 2019 - Development time: 2 and half weeks*
 
 > 🔨 Game made with Unity 3D. In this game you walk in a forest and you decided to clean the rubbish to preserve nature. So pick up all the soda  cans in the allotted time. It's an original game, not inspired by a totorial. By the way I used tons of tutorials and websites to help during the developpement.
 

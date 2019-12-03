@@ -20,7 +20,7 @@
 
 #### 1.1.1 Windows Installer
 
-Download the installer [here](https://drive.google.com/open?id=1ge26sNREoVhetAXvAMiVUBR2xhc7l5BA) and just follow the instructions.
+Download the installer [here](https://drive.google.com/open?id=1ge26sNREoVhetAXvAMiVUBR2xhc7l5BA) [899Mb] and just follow the instructions.
 
 #### 1.1.2 Zip version
 

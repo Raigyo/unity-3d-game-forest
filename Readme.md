@@ -34,7 +34,7 @@ Download the zip with the game [here](https://drive.google.com/open?id=1z-Ep5Kwq
 
 In 'forest-mac-osx' launch build-macsos.app by clicking on it to play.
 
-It's not an approved Mac App Store application so you will have to select 'allow apps downloaded from anywhere' or on 'open anyway' if you want to launch it.
+Warning: It's not an approved Mac App Store application so you will have to select 'allow apps downloaded from anywhere' or click on 'open anyway' on the alert box if you want to launch the game.
 
 ### 1.3 Linux x86_64
 

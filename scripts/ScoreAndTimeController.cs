@@ -28,7 +28,6 @@ public class ScoreAndTimeController : MonoBehaviour
     void Start()
     {
         timer = mainTimer;
-
         //Cound the number of gans un the GO Rubbish
         goRubbishCount = goRubbish.GetComponentsInChildren<Transform>().GetLength(0) - 1;
         goRubbishCount = goRubbishCount / 2; //divided by 2 because all prefabs have a children with icon

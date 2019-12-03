@@ -1,20 +1,53 @@
 # Unity 3D / C# / Visual Studio - Original game development - 'A Forest' aka 'Grab the cans'
 
-*November 2019 - Development time: 2 and half weeks*
+*November / December 2019 - Development time: 3 weeks*
 
-> 🔨 Game made with Unity 3D. In this game you walk in a forest and you decided to clean the rubbish to preserve nature. So pick up all the soda  cans in the allotted time.
+> 🔨 Game made with Unity 3D (ver. 2019.2.4f1). In this game you walk in a forest and you decided to clean the rubbish to preserve nature. So pick up all the soda  cans in the allotted time.
  It's an original game, not inspired by a tutorial. By the way I used tons of tutorials and websites to help during the development.
- The gameplay is quite basic, but the mecanics including navigation, introduction, sound design are the same than in a commercial game. The 3D environments and animations are quite high grade.
+ The gameplay is quite basic, but the mecanics including navigation, introduction, sound design are the same than in a commercial game. The 3D environments and animations are quite high grade quality.
 
 * * *
 
+![01-title.png](images/01-title.png)
+
+![06-butterfly.png](images/06-butterfly.png)
+
+![05-general-view.png](images/05-general-view.png)
+
 ## 1. Installation
 
-Download the zip with the game [here](https://xxx) and unzip it on your computer. Then launch xxx.exe.
+### 1.1 Windows x86_64
 
-Or watch the gameplay video on [here](https://xxx).
+Download the zip with the game [here](https://xxx) and unzip forest-windows64.zip on your computer.
 
-Some scripts used are in the [script folder](https://github.com/Raigyo/unity-3d-game-forest/tree/master/scripts) on this repository.
+In 'forest-windows64' launch forest-project.exe by clicking on it to play.
+
+### 1.2 Mac OSX
+
+Download the zip with the game [here](https://xxx) and unzip forest-mac-osx.zip on your computer.
+
+In 'forest-mac-osx' launch build-macsos.app by clicking on it to play.
+
+### 1.3 Linux x86_64
+
+Download the zip with the game [here](https://xxx) and unzip build-linux_x86_64.zip on your computer.
+
+In 'build-linux_x86_64' launch forest-project.x86_64 (you will have to allow the file running as executable: right click on forest-project.x86_64 and chose Properties -> Permissions -> Allow executing file as program).
+
+Or in the directory 'build-linux_x86_64':
+
+~~~~
+chmod +x forest-project.x86_64
+run forest-project.x86_64
+~~~~
+
+### 1.4 Video gameplay
+
+Watch the gameplay video on [here](https://xxx).
+
+### 1.5 Scripts for reviewing
+
+Scripts used are in the [script folder](https://github.com/Raigyo/unity-3d-game-forest/tree/master/scripts) on this repository.
 
 *-------*
 
@@ -28,41 +61,51 @@ This game has been tested again and again and again... But if you have advises o
 
 ### 2.1. How to play
 
-#### 2.1.1 Playing game (Game mode)
+![03-can.png](images/03-can.png)
+
+
+#### 2.1.1. Playing game (Game mode)
 
 Walk in the forest and grap the 30 cans within 10 minutes.
 
-Use the zqsd / arrows key (see 2.1.3 Settings about that part) to move and your mouse to look around. You can help yoursel with the minimap that displays can that are near you.
+Use **wasd** or **zqsd** keys (according to your choice in the menu setting) to move and your mouse to look around. Use **LeftShift** to run and **Space** to jump.
+You can help yoursel with the minimap that displays can that are near you.
 
 If you win or fail, a menu is displayed asking you if you want to try again or go back to menu.
 
 Other features:
 
-- 'F2': show/hide Minimap
-
-- 'Escape' / 'P': show/hide pause menu with continue or back to menu.
-
-#### 2.1.2 Walking mode (Free mode)
-
-No cans to pickup or timer, just walk and discover the landscape using the same keys than in game mode.
-
-- Choose the time of the day with 'F2' / 'F3' / 'F4' (morning / afternoon / evening)
+- 'F2': show / hide the Minimap
 
 - 'Escape' / 'P': show / hide pause menu with continue or back to menu.
 
-#### 2.1.3 Menu: Settings
+![04-can.png](images/04-can.png)
 
-Not implemented yet. It would allow to change keys. Numerous tests have been made to create a remapping/rebinding feature in game, but without finding a solution.
+#### 2.1.2. Walking mode (Free mode)
 
-It's a native feature that lacks in Unity for years. I will try later using the asset [Rewired](https://assetstore.unity.com/packages/tools/utilities/rewired-21676) that is more powerful thant the input management of Unity, even the new one in preview.
+No cans to pickup or timer, just walk and discover the landscape using the same keys than in game mode.
+
+- 'F2': Open the pannel to choose and display the time of the day, it will affect the environment lighting. Or choose the time of the day with 'F3' / 'F4' / 'F5'/ 'F6' (simulated morning / afternoon / evening or real time).
+
+- 'Escape' / 'P': show / hide pause menu with continue or back to menu.
+
+![07-settings-time.png](images/07-settings-time.png)
+
+#### 2.1.3. Settings
+
+Here you can change the keyboard layout setting, querty (WASD) or azerty (ZQSD). You could also see a summary of the keys used in the game.
+
+![02-settings.png](images/02-settings.png)
 
 *-------*
 
+![04-can.png](images/04-can.png)
+
 ## 3. Techniques / Assets / Scripts
 
-### 3.1 Intro scene (scene name: intro)
+### 3.1. Intro scene (scene name: intro)
 
-#### 3.1.1 Menu
+#### 3.1.1. Menu
 
 You can select between game mode or walking mode.
 
@@ -70,7 +113,15 @@ The game selected is managed by Scriptable Objects (that can be sused as 'global
 
 The two versions of the game a just one scene with some GameObjects displayed or not according to the boolean value in the Scriptable Objects. This value is reset each time we comme back to the ontro scene.
 
-#### 3.1.2 Cinematic
+#### 3.1.2. Settings
+
+Here you can choose keyboard layout.
+
+It's a native feature that lacks in Unity for years. That's wy I use the asset [Rewired](https://assetstore.unity.com/packages/tools/utilities/rewired-21676) that is more powerful thant the input management of Unity, even the new one in preview.
+
+It uses scriptable objects to remember the choice in the second scene.
+
+#### 3.1.3. Cinematic
 
 This scene has been made using the Unity additionnal package [Cinemachine](https://unity.com/fr/unity/features/editor/art-and-design/cinemachine).
 
@@ -80,19 +131,19 @@ The lanscape is the same the the one used in the game. The result is displayed a
 
 To make quality cinematics can be a long process... Here it's far to be perfect, you could see some speed variation during the cinematic...
 
-#### 3.1.3 Canvas
+#### 3.1.4. Canvas
 
-A basic canvas is used as overlay to display buttons and informations, with some scripting and EventSystem components, including tooltips.
+Canvas are used as overlay to display buttons and informations (GUI), with some scripting and EventSystem components, including tooltips.
 
-There are also some canvas in the forest/game scene.
+There are also many canvas in the forest/game scene. I used 'scale with screen size' rendering and anchors' to be sure that every elements fit on the screen according to the resolution. Several resolutions have been tested in the game pannel using the resolutions / aspect ratio selector.
 
-#### 3.1.4 Loader
+#### 3.1.5. Loader
 
-The muscic is fade out with a coroutine then another coroutine is launched to display the loader asynchronously. The same loader is used on the two scenes. There aren't specic script for this scene, it uses the same than in the next so they will be detailled there.
+The music is fade out with a coroutine then another coroutine is launched to display the loader asynchronously. The same loader is used on the two scenes. There aren't specic script for this scene, it uses the same than in the next so they will be detailled there.
 
-### 3.2 Game scene (scene name: forest)
+### 3.2. Game scene (scene name: forest)
 
-#### 3.2.1 The terrain
+#### 3.2.1. The terrain
 
 This game uses [Forest Environment - Dynamic Nature](https://assetstore.unity.com/packages/3d/vegetation/forest-environment-dynamic-nature-150668) from [NatureManufacture](https://assetstore.unity.com/publishers/6887).
 
@@ -104,7 +155,7 @@ The terrain is surrounded by moutain and there is a slope detection to avoid pla
 
 By the way, I made like all developers, I added... invisible walls! (just in case).
 
-#### 3.2.1 Minimap
+#### 3.2.2. Minimap
 
 The game use a minimap in the GTA style to display the rubbish to collect. The minimap is made with a ortographic camera above the player.
 
@@ -114,7 +165,7 @@ To improve performances, this camera uses occlusion culling (so what is not in f
 
 Markers are GameObjects in the prefab of cans. The main camera displays the layer with the rubbish and the minimap only these markers.
 
-#### 3.2.2 Script: [HitBehaviour.cs](scripts/HitBehaviour.cs)
+#### 3.2.3. Script: [HitBehaviour.cs](scripts/HitBehaviour.cs)
 
 //HitBehaviour: Raycast on GO that can be picked-up / Highlight GO
 
@@ -124,7 +175,7 @@ It's also used to change the material on grabble object when the raycast hits it
 
 It's also in this script that I cound the cans grabbed. I can define if all the cans have been picked up. It could be managed in another script, but It was  the easiest way for me to avoid to increase the score if the player would click several times... The rubbish are children of a GameObject (used like a kind of folder). I don't have to specify how many GO there are in it because I count them in the script. BTW It's divided by 2 because each prefab has two GO, the rubbish and its icon (for the minimap)...
 
-#### 3.2.3 Script: [GrabObject.cs](scripts/GrabObject.cs)
+#### 3.2.4. Script: [GrabObject.cs](scripts/GrabObject.cs)
 
 // GrabObject: animation / sound / set the object unactive
 
@@ -134,7 +185,7 @@ When the mouse button is released the script set inactive the icon on minimap im
 
 It's also in that script that the sound is played.
 
-#### 3.2.4 Script: [ScoreAndTimeController.cs](scripts/ScoreAndTimeController.cs)
+#### 3.2.5. Script: [ScoreAndTimeController.cs](scripts/ScoreAndTimeController.cs)
 
 //ScoreAndTimeController : counter and score management / detect if lost or win**
 
@@ -144,49 +195,53 @@ Score displaying according to the total of GO contained in the rubbish GO.
 
 It's also that calss that controls if the player has won or lost.
 
-#### 3.2.3 Script: [GameController.cs](scripts/GameController.cs)
+#### 3.2.6. Script: [GameController.cs](scripts/GameController.cs)
 
 //GameController : counter and score management / display messages and pannels /show hide some elements
 
 This script manage many things: display or hide elements according to the situation.
 
 - Manage GUI buttons on intro
-
 - Displays elements that are Game mode / Free mode specific
-
 - Displays pannels and messages when we lost or win
-
 - Manage loading scene and progress bar for the two scenes
-
 - Manage the launch of sound fade in / fade out
 
 Note to myself: don't forget 'Event Listener' if you use GUI.
 
-#### 3.2.4 Script: [ActionKeysManager.cs](scripts/ActionKeysManager.cs)
+#### 3.2.7. Script: [FirstPersonControllerEdited.cs](scripts/FirstPersonControllerEdited.cs)
 
-//ActionKeysManager: Manage the keyboard shortcuts ingame and what's displayed / hidden then**
+//FirstPersonController.cs: Player control management
+
+Modified version of **FirstPersonController.cs** component to manage **Rewired** and **Dynamic** Footsteps for first person games** assets and **SlopeDetection.cs** datas.
+
+#### 3.2.8. Script: [ActionKeysManager.cs](scripts/ActionKeysManager.cs)
+
+//ActionKeysManager: Manages the keyboard shortcuts ingame and what's displayed / hidden then**
 
 Used for the pause menu, the displaying of the minimap or the time selector pannel.
 
-#### 3.2.5 Script: [SlopeDetection.cs](scripts/SlopeDetection.cs)
+It also display a pannel in walking mode that allows to choose the time of the day and display the hour using dropdown menu and toggle.
+
+#### 3.2.9. Script: [SlopeDetection.cs](scripts/SlopeDetection.cs)
 
 //SlopeDetection: Finds the slope/grade/incline angle of ground underneath a CharacterController**
 
 I used and modified this [script](https://gist.github.com/jawinn/f466b237c0cdc5f92d96) to detect the slope using a raycast behind the player. so i can set the high of jump according to the slope/ incline angle of ground underneath.
 
-#### 3.2.6 [ToolTips.cs](scripts/ToolTips.cs)
+#### 3.2.10. [ToolTips.cs](scripts/ToolTips.cs)
 
 //ToolTips: displays tooltip on menu when a button is hovered**
 
 Script to display tooltips. The content (title+content) is managed in a component on the GO.
 
-#### 3.2.6 Footstep sounds
+#### 3.2.11. Footstep sounds
 
 I use the asset [Dynamic Footsteps for first person games](https://assetstore.unity.com/packages/tools/dynamic-footsteps-for-first-person-games-85052) to manage footstep sounds. Not expensive and very useful.
 
-With that asset you can define sounds played randomly for some layers only. BTW I had to adjust or create some colliders (primitive / mesh) on some GameObjects (water and bridges). According to me it's more easy to add colliders on a layer than define texture that will interact with a raycast  (textures can be numerous or be changed by the designer / raycast could... not work on every cases) . I've tried several solutions, this one convinced me.
+With that asset you can define sounds played randomly using a tag. BTW I had to adjust or create some colliders (primitive / mesh) on some GameObjects (water and bridges). According to me it's more easy to add colliders on a tagged GO than define texture that will interact with a raycast  (textures can be numerous or be changed by the designer / raycast could... not work on every cases) . I've tried several solutions, this one convinced me.
 
-#### 3.2.7 Time of the day
+#### 3.2.12. Time of the day
 
 During the game, the time goes by...
 
@@ -194,95 +249,81 @@ I use the following asset for that: [Hendrik Haupt - Enviro - Sky and Weather](h
 
 Note to myself: uncheck 'don't destroy on load' on Enviro manager to reset all datas and reactivate them by scripting.
 
-### 3.3 Optimization
+### 3.3. Optimization
 
 Scripts avoid to use *GameObject.FindGameObjectsWithTag* or *GameObject.Find* methods but use public variables that can be accessed from the inspector.
 
 TextMeshPro is used for text that's more efficient than regular text.
 
-There is occlusion culling on the FPS camera (the computer calculate only what's shown by the camera) and on the camera used on minimap.
+There is occlusion culling (the computer calculate only what's shown by the camera) on the cameras using the rendering option (not on the camera component otherwise it causes glitches).
 
 A lot of asset in hierarchy use LOD (Level of Detail) that *reduces the load on the hardware and improves the rendering performance*.
 
-### 3.4 Sound design
+All the cameras allow **dynamic resolution**. It means that if frame rate reduces, the game scales down the resolution to maintain a consistent frame rate.
+
+### 3.4. Sound design
 
 Excepted in the profesionnal gaming industry, I've noticed that the sound design is often neglected.
 
-However, it's very important in what you feel when you play game, watch movies, series and so on... Like in the real life, real silence is quite rare... The sound and music, it's 90% of the atmosphere...
+However, it's very important in what you feel when you play game, watch movies, series and so on... Like in the real life, real silence is quite rare... The sound and music, it's 90% of the atmosphere... So I've paid attention of the sound in this game.
 
-So I've bought this [soundtrack](https://freetousesounds.bandcamp.com/track/forest-sounds-germany-crows-birds-soft-wind-royalty-free) and paid attention of the sound in this game.
+So I've bought some royalty free soundtracks and also took care of licensing so I selected royalty free ones.
 
 This royalty free song from [Whitesand](https://www.youtube.com/watch?v=_hSyRMyqFOM) is used for the intro.
 
 *-------*
 
-## 4. To do
+## 4. Credits
 
-- [] Menu to allow to change keys binding (querty/azerty - wasd/zqsd)
-
-*-------*
-
-## 5. Music & Sounds credits
+### 4.1. Music & Sounds
 
 - Whitesand - Drops (Royalty and Copyright Free) - [Youtube](https://www.youtube.com/watch?v=_hSyRMyqFOM) / [Facebook](https://www.facebook.com/martynlaur) / [Twitter](https://twitter.com/MartynLaur) / [Instagram](https://www.instagram.com/martynas_lau/) / [SoundCloud](https://soundcloud.com/martynaslau)
-
 - Forest Sounds Germany ! Crows, Birds & Soft Wind! Royalty Free - [freetousesounds](https://freetousesounds.bandcamp.com/track/forest-sounds-germany-crows-birds-soft-wind-royalty-free)
-
+- Night Sounds National Park Doi Suthep, Thailand! Jungle Sound Effects! Royalty Free - [freetousesounds](https://freetousesounds.bandcamp.com/album/night-sounds-national-park-doi-suthep-thailand-jungle-sound-effects)
 - [Free SFX / Free Sound Effects](https://www.freesfx.co.uk/Default.aspx)
-
 - [Zapsplat / Free sound effects & royalty free music](https://www.zapsplat.com/)
+- [Freesound](https://freesound.org/)
 
-*-------*
-
-## 6. Assets used
+### 4.2. Assets used
 
 - [NatureManufacture  - Forest Environment - Dynamic Nature](https://assetstore.unity.com/packages/3d/vegetation/forest-environment-dynamic-nature-150668)
-
 - [John's Art - Dynamic Footsteps for first person games](https://assetstore.unity.com/packages/tools/dynamic-footsteps-for-first-person-games-85052)
-
 - [Unluck Software - Bird Flock Bundle](https://assetstore.unity.com/packages/3d/characters/animals/bird-flock-bundle-25576)
-
 - [Unluck Software - Firefly Particles](https://assetstore.unity.com/packages/vfx/particles/environment/firefly-particles-89299)
-
 - [YGS Assets - Cola Can](https://assetstore.unity.com/packages/3d/cola-can-96659)
-
 - [Unity Technologies - 3D Game Kit](https://assetstore.unity.com/packages/templates/tutorials/3d-game-kit-115747)
-
 - [Hendrik Haupt - Enviro - Sky and Weather](https://assetstore.unity.com/packages/tools/particles-effects/enviro-sky-and-weather-33963)
 
+### 4.3. Fonts
+
+- [FontSpace - Font Curiosity](https://www.fontspace.com/)
+
 *-------*
 
-## 7. Useful links & Greetings
-
-- [Unity Learn](https://learn.unity.com/)
+## 5. Useful links & Greetings
 
 - [Brackeys Game Dev Tutorials](https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA)
-
-- [Jason Weimann - Unity 3D College](https://www.youtube.com/channel/UCX_b3NNQN5bzExm-22-NVVg)
-
-- [Raywenderlich](https://www.raywenderlich.com/)
-
-- [IMERSITY](https://www.youtube.com/channel/UCCCf8Z1iY3yXQUxcnarA0Ag)
-
-- [Epitome](https://www.youtube.com/channel/UCsaXQNLxeHvwJdDUrICGufA)
-
-- [Sylvain - Créateur 3D](https://www.youtube.com/channel/UC8BM2xQlXcK4Vt3OqfOmj9g)
-
-- [Unity Pour les nuls](https://www.youtube.com/channel/UCuU8cONIgZ182KheI1s6HqQ)
-
-- [inScope Studios](https://www.youtube.com/channel/UCyVsCcTte38YC9CxJtw3hBQ)
-
-- [Info Gamer](https://www.youtube.com/channel/UCyoayn_uVt2I55ZCUuBVRcQ)
-
-- [Learn Everything Fast](https://www.youtube.com/channel/UCG5XadFg6icC2TcF0I5DIig)
-
 - [DitzelGames](https://www.youtube.com/channel/UCdedu-nAwMACE5WbVcmp3Bg)
-
+- [Epitome](https://www.youtube.com/channel/UCsaXQNLxeHvwJdDUrICGufA)
+- [IMERSITY](https://www.youtube.com/channel/UCCCf8Z1iY3yXQUxcnarA0Ag)
+- [Info Gamer](https://www.youtube.com/channel/UCyoayn_uVt2I55ZCUuBVRcQ)
+- [inScope Studios](https://www.youtube.com/channel/UCyVsCcTte38YC9CxJtw3hBQ)
+- [Jason Weimann - Unity 3D College](https://www.youtube.com/channel/UCX_b3NNQN5bzExm-22-NVVg)
+- [Learn Everything Fast](https://www.youtube.com/channel/UCG5XadFg6icC2TcF0I5DIig)
+- [Raywenderlich](https://www.raywenderlich.com/)
+- [SpeedTutor](https://www.youtube.com/channel/UCwYuQIa9lgjvDiZryUVtFGw)
+- [Sylvain - Créateur 3D](https://www.youtube.com/channel/UC8BM2xQlXcK4Vt3OqfOmj9g)
 - [TUTO UNITY FR](https://www.youtube.com/channel/UCJRwb5W4ZzG43J5_dViL6Fw)
+- [Unity Guruz](https://www.youtube.com/channel/UCgd3l8iA5zBYVa4sQ6-ONFw)
+- [Unity Learn](https://learn.unity.com/)
+- [Unity Pour les nuls](https://www.youtube.com/channel/UCuU8cONIgZ182KheI1s6HqQ)
+- [Unity3D With Scott](https://www.youtube.com/channel/UC9hfBvn17qSIrdFwAk56oZg)
 
 *-------*
 
-## 8.Contact (Github / Linked In)
+## 6. Contact (Github / Linked In)
 
 - [My Github](https://github.com/Raigyo)
 - [My LinkedIn](https://www.linkedin.com/in/vincent-chilot/)
+
+![08-sun.png](images/08-sun.png)

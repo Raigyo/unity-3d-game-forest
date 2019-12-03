@@ -17,7 +17,12 @@ public class ToolTips : MonoBehaviour
     public GameObject toolTipWindow;
     public TextMeshProUGUI displayName;
     public TextMeshProUGUI displayInfo;
+    private ToolTips toolTipsScripts;
 
+    public void Start()
+    {
+        toolTipsScripts = gameObject.GetComponent<ToolTips>();
+    }
 
     //Show panel
     public void ShowPanel()
@@ -28,11 +33,17 @@ public class ToolTips : MonoBehaviour
             displayName.text = objectName;
             displayInfo.text = objectInfo;
         }
-    }
+    }//!!!drag and drop the tooltip.cs script component from the currentbutton to the object on trigger event manager
 
     //Hide panel
     public void HidePanel()
     {
         toolTipWindow.SetActive(false);
+    }//!!!drag and drop the tooltip.cs script component from the currentbutton to the object on trigger event manager
+
+    //Disable panel
+    public void DisablePanel()
+    {
+        toolTipsScripts.enabled = false;
     }
 }

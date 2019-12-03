@@ -215,7 +215,7 @@ Note to myself: don't forget 'Event Listener' if you use GUI.
 
 //FirstPersonController.cs: Player control management
 
-Modified version of **FirstPersonController.cs** component to manage **Rewired** and **Dynamic** Footsteps for first person games** assets and **SlopeDetection.cs** datas.
+Modified version of **FirstPersonController.cs** component to manage **Rewired** and **Dynamic Footsteps for first person games** assets and **SlopeDetection.cs** datas.
 
 #### 3.2.8. Script: [ActionKeysManager.cs](scripts/ActionKeysManager.cs)
 

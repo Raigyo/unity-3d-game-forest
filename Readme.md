@@ -18,19 +18,19 @@
 
 ### 1.1 Windows x86_64
 
-Download the zip with the game [here](https://xxx) and unzip forest-windows64.zip on your computer.
+Download the zip with the game [here](https://drive.google.com/open?id=132E5ejLU5oWoKGphxwqQsrJybRMVBZgi) and unzip forest-windows64.zip on your computer.
 
 In 'forest-windows64' launch forest-project.exe by clicking on it to play.
 
 ### 1.2 Mac OSX
 
-Download the zip with the game [here](https://xxx) and unzip forest-mac-osx.zip on your computer.
+Download the zip with the game [here](https://drive.google.com/open?id=1z-Ep5Kwq5RcbGIM-JlVLDDj9Zol4g6vG) and unzip forest-mac-osx.zip on your computer.
 
 In 'forest-mac-osx' launch build-macsos.app by clicking on it to play.
 
 ### 1.3 Linux x86_64
 
-Download the zip with the game [here](https://xxx) and unzip build-linux_x86_64.zip on your computer.
+Download the zip with the game [here](https://drive.google.com/open?id=14qKlgEXHS3Ig2xN-HV_RVtu_QQQz54Pt) and unzip build-linux_x86_64.zip on your computer.
 
 In 'build-linux_x86_64' launch forest-project.x86_64 (you will have to allow the file running as executable: right click on forest-project.x86_64 and chose Properties -> Permissions -> Allow executing file as program).
 
@@ -41,11 +41,7 @@ chmod +x forest-project.x86_64
 run forest-project.x86_64
 ~~~~
 
-### 1.4 Video gameplay
-
-Watch the gameplay video on [here](https://xxx).
-
-### 1.5 Scripts for reviewing
+### 1.4 Scripts for reviewing
 
 Scripts used are in the [script folder](https://github.com/Raigyo/unity-3d-game-forest/tree/master/scripts) on this repository.
 
@@ -286,17 +282,22 @@ This royalty free song from [Whitesand](https://www.youtube.com/watch?v=_hSyRMyq
 
 ### 4.2. Assets used
 
-- [NatureManufacture  - Forest Environment - Dynamic Nature](https://assetstore.unity.com/packages/3d/vegetation/forest-environment-dynamic-nature-150668)
-- [John's Art - Dynamic Footsteps for first person games](https://assetstore.unity.com/packages/tools/dynamic-footsteps-for-first-person-games-85052)
-- [Unluck Software - Bird Flock Bundle](https://assetstore.unity.com/packages/3d/characters/animals/bird-flock-bundle-25576)
-- [Unluck Software - Firefly Particles](https://assetstore.unity.com/packages/vfx/particles/environment/firefly-particles-89299)
-- [YGS Assets - Cola Can](https://assetstore.unity.com/packages/3d/cola-can-96659)
-- [Unity Technologies - 3D Game Kit](https://assetstore.unity.com/packages/templates/tutorials/3d-game-kit-115747)
-- [Hendrik Haupt - Enviro - Sky and Weather](https://assetstore.unity.com/packages/tools/particles-effects/enviro-sky-and-weather-33963)
+- [3D Game Kit - Unity Technologies](https://assetstore.unity.com/packages/templates/tutorials/3d-game-kit-115747)
+- [Bird Flock Bundle - Unluck Software](https://assetstore.unity.com/packages/3d/characters/animals/bird-flock-bundle-25576)
+- [Cola Can - YGS Assets](https://assetstore.unity.com/packages/3d/cola-can-96659)
+- [Dynamic Footsteps for first person games - John's Art](https://assetstore.unity.com/packages/tools/dynamic-footsteps-for-first-person-games-85052)
+- [Enviro - Sky and Weather - Hendrik Haupt](https://assetstore.unity.com/packages/tools/particles-effects/enviro-sky-and-weather-33963)
+- [Firefly Particles - Unluck Software](https://assetstore.unity.com/packages/vfx/particles/environment/firefly-particles-89299)
+- [Forest Environment - Dynamic Nature - NatureManufacture](https://assetstore.unity.com/packages/3d/vegetation/forest-environment-dynamic-nature-150668)
+- [Rewired - Guavaman Enterprises](https://assetstore.unity.com/packages/tools/utilities/rewired-21676)
 
 ### 4.3. Fonts
 
 - [FontSpace - Font Curiosity](https://www.fontspace.com/)
+
+### 4.4. Software
+
+- [Inno Setup - Installer](http://www.jrsoftware.org/isinfo.php)
 
 *-------*
 

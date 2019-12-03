@@ -99,8 +99,6 @@ Here you can change the keyboard layout setting, querty (WASD) or azerty (ZQSD).
 
 *-------*
 
-![04-can.png](images/04-can.png)
-
 ## 3. Techniques / Assets / Scripts
 
 ### 3.1. Intro scene (scene name: intro)
@@ -140,6 +138,8 @@ There are also many canvas in the forest/game scene. I used 'scale with screen s
 #### 3.1.5. Loader
 
 The music is fade out with a coroutine then another coroutine is launched to display the loader asynchronously. The same loader is used on the two scenes. There aren't specic script for this scene, it uses the same than in the next so they will be detailled there.
+
+![04-can.png](images/04-can.png)
 
 ### 3.2. Game scene (scene name: forest)
 

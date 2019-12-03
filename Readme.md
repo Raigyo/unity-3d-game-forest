@@ -125,7 +125,7 @@ It uses scriptable objects to remember the choice in the second scene.
 
 This scene has been made using the Unity additionnal package [Cinemachine](https://unity.com/fr/unity/features/editor/art-and-design/cinemachine).
 
-Cinemachine allows to use several virtual cameras to make cut-scenes, trailers and so on. In this intro I use the 'dolly track' feature.
+Cinemachine allows to use several virtual cameras to make cut-scenes, trailers and so on. In this intro I use the **dolly track** feature.
 
 The lanscape is the same the the one used in the game. The result is displayed as an animation made with the components *Animator* and *Animation*.
 
@@ -135,7 +135,7 @@ To make quality cinematics can be a long process... Here it's far to be perfect,
 
 Canvas are used as overlay to display buttons and informations (GUI), with some scripting and EventSystem components, including tooltips.
 
-There are also many canvas in the forest/game scene. I used 'scale with screen size' rendering and anchors' to be sure that every elements fit on the screen according to the resolution. Several resolutions have been tested in the game pannel using the resolutions / aspect ratio selector.
+There are also many canvas in the forest/game scene. I used **scale with screen size** rendering and anchors to be sure that every elements fit on the screen according to the resolution. Several resolutions have been tested in the game pannel using the resolutions / aspect ratio selector.
 
 #### 3.1.5. Loader
 
@@ -189,7 +189,7 @@ It's also in that script that the sound is played.
 
 #### 3.2.5. Script: [ScoreAndTimeController.cs](scripts/ScoreAndTimeController.cs)
 
-//ScoreAndTimeController : counter and score management / detect if lost or win**
+//ScoreAndTimeController : counter and score management / detect if lost or win
 
 Coundown that converts deltaTime in minutes / seconds. Delta time can be specified in the inspector.
 
@@ -219,7 +219,7 @@ Modified version of **FirstPersonController.cs** component to manage **Rewired**
 
 #### 3.2.8. Script: [ActionKeysManager.cs](scripts/ActionKeysManager.cs)
 
-//ActionKeysManager: Manages the keyboard shortcuts ingame and what's displayed / hidden then**
+//ActionKeysManager: Manages the keyboard shortcuts ingame and what's displayed / hidden
 
 Used for the pause menu, the displaying of the minimap or the time selector pannel.
 
@@ -227,13 +227,13 @@ It also display a pannel in walking mode that allows to choose the time of the d
 
 #### 3.2.9. Script: [SlopeDetection.cs](scripts/SlopeDetection.cs)
 
-//SlopeDetection: Finds the slope/grade/incline angle of ground underneath a CharacterController**
+//SlopeDetection: Finds the slope/grade/incline angle of ground underneath a CharacterController
 
-I used and modified this [script](https://gist.github.com/jawinn/f466b237c0cdc5f92d96) to detect the slope using a raycast behind the player. so i can set the high of jump according to the slope/ incline angle of ground underneath.
+I used and modified this [script](https://gist.github.com/jawinn/f466b237c0cdc5f92d96) to detect the slope using a raycast behind the player. So i can set the high of jump according to the slope/ incline angle of ground underneath.
 
 #### 3.2.10. [ToolTips.cs](scripts/ToolTips.cs)
 
-//ToolTips: displays tooltip on menu when a button is hovered**
+//ToolTips: displays tooltip on menu when a button is hovered
 
 Script to display tooltips. The content (title+content) is managed in a component on the GO.
 

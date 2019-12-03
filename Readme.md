@@ -1,4 +1,4 @@
-# Unity 3D / C# / Visual Studio - Original game development - 'A Forest' aka 'Grab the cans'
+# Unity 3D / C# / Visual Studio - Original game development - 'A Forest'
 
 *November / December 2019 - Development time: 3 weeks*
 
@@ -18,19 +18,25 @@
 
 ### 1.1 Windows x86_64
 
-Download the zip with the game [here](https://drive.google.com/open?id=132E5ejLU5oWoKGphxwqQsrJybRMVBZgi) and unzip forest-windows64.zip on your computer.
+#### 1.1.1 Windows Installer
+
+Download the installer [here](https://drive.google.com/open?id=1ge26sNREoVhetAXvAMiVUBR2xhc7l5BA) and just follow the instructions.
+
+#### 1.1.2 Zip version
+
+Download the zip with the game [here](https://drive.google.com/open?id=132E5ejLU5oWoKGphxwqQsrJybRMVBZgi) [0.98Gb] and unzip forest-windows64.zip on your computer.
 
 In 'forest-windows64' launch forest-project.exe by clicking on it to play.
 
 ### 1.2 Mac OSX
 
-Download the zip with the game [here](https://drive.google.com/open?id=1z-Ep5Kwq5RcbGIM-JlVLDDj9Zol4g6vG) and unzip forest-mac-osx.zip on your computer.
+Download the zip with the game [here](https://drive.google.com/open?id=1z-Ep5Kwq5RcbGIM-JlVLDDj9Zol4g6vG) [1.00Gb] and unzip forest-mac-osx.zip on your computer.
 
 In 'forest-mac-osx' launch build-macsos.app by clicking on it to play.
 
 ### 1.3 Linux x86_64
 
-Download the zip with the game [here](https://drive.google.com/open?id=14qKlgEXHS3Ig2xN-HV_RVtu_QQQz54Pt) and unzip build-linux_x86_64.zip on your computer.
+Download the zip with the game [here](https://drive.google.com/open?id=14qKlgEXHS3Ig2xN-HV_RVtu_QQQz54Pt) [1.01Gb] and unzip build-linux_x86_64.zip on your computer.
 
 In 'build-linux_x86_64' launch forest-project.x86_64 (you will have to allow the file running as executable: right click on forest-project.x86_64 and chose Properties -> Permissions -> Allow executing file as program).
 
@@ -295,8 +301,9 @@ This royalty free song from [Whitesand](https://www.youtube.com/watch?v=_hSyRMyq
 
 - [FontSpace - Font Curiosity](https://www.fontspace.com/)
 
-### 4.4. Software
+### 4.4. Softwares
 
+- [Audacity](https://www.audacityteam.org/)
 - [Inno Setup - Installer](http://www.jrsoftware.org/isinfo.php)
 
 *-------*

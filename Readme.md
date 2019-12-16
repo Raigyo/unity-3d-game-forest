@@ -8,11 +8,11 @@
 
 * * *
 
-![01-title.png](images/01-title.png)
+![Intro](images/01-title.png)
 
-![06-butterfly.png](images/06-butterfly.png)
+![Butterflies](images/06-butterfly.png)
 
-![05-general-view.png](images/05-general-view.png)
+![General view](images/05-general-view.png)
 
 ## 1. Installation
 
@@ -65,7 +65,7 @@ This game has been tested again and again and again... But if you have advises o
 
 ### 2.1. How to play
 
-![03-can.png](images/03-can.png)
+![Grab the cans](images/03-can.png)
 
 
 #### 2.1.1. Playing game (Game mode)
@@ -83,7 +83,7 @@ Other features:
 
 - 'Escape' / 'P': show / hide pause menu with continue or back to menu.
 
-![04-can.png](images/04-can.png)
+![Grab the cans](images/04-can.png)
 
 #### 2.1.2. Walking mode (Free mode)
 
@@ -93,13 +93,13 @@ No cans to pickup or timer, just walk and discover the landscape using the same 
 
 - 'Escape' / 'P': show / hide pause menu with continue or back to menu.
 
-![07-settings-time.png](images/07-settings-time.png)
+![Setting time](images/07-settings-time.png)
 
 #### 2.1.3. Settings
 
 Here you can change the keyboard layout setting, querty (WASD) or azerty (ZQSD). You could also see a summary of the keys used in the game.
 
-![02-settings.png](images/02-settings.png)
+![Setting keys](images/02-settings.png)
 
 *-------*
 
@@ -143,7 +143,7 @@ There are also many canvas in the forest/game scene. I used **scale with screen 
 
 The music is fade out with a coroutine then another coroutine is launched to display the loader asynchronously. The same loader is used on the two scenes. There aren't specic script for this scene, it uses the same than in the next so they will be detailled there.
 
-![04-can.png](images/04-can.png)
+![Waterfall](images/09-waterfall.png)
 
 ### 3.2. Game scene (scene name: forest)
 
@@ -337,4 +337,4 @@ This royalty free song from [Whitesand](https://www.youtube.com/watch?v=_hSyRMyq
 - [My Github](https://github.com/Raigyo)
 - [My LinkedIn](https://www.linkedin.com/in/vincent-chilot/)
 
-![08-sun.png](images/08-sun.png)
+![Sunchine](images/08-sun.png)

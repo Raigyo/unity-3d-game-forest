@@ -70,7 +70,7 @@ This game has been tested again and again and again... But if you have advises o
 
 #### 2.1.1. Playing game (Game mode)
 
-Walk in the forest and grap the 30 cans within 10 minutes.
+Walk in the forest and grab the 30 cans within 10 minutes.
 
 Use **wasd** or **zqsd** keys (according to your choice in the menu setting) to move and your mouse to look around. Use **LeftShift** to run and **Space** to jump.
 You can help yoursel with the minimap that displays can that are near you.

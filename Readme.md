@@ -20,17 +20,17 @@
 
 #### 1.1.1 Windows Installer
 
-Download the installer [here](https://drive.google.com/open?id=1ge26sNREoVhetAXvAMiVUBR2xhc7l5BA) [899Mb] and just follow the instructions.
+Download the installer [here](https://raigyo-dev.be/downloads/a-forest/forest-setup.exe) [899Mb] and just follow the instructions.
 
 #### 1.1.2 Zip version
 
-Download the zip with the game [here](https://drive.google.com/open?id=132E5ejLU5oWoKGphxwqQsrJybRMVBZgi) [0.98Gb] and unzip forest-windows64.zip on your computer.
+Download the zip with the game [here](https://raigyo-dev.be/downloads/a-forest/forest-windows_x86_64.zip) [0.98Gb] and unzip forest-windows64.zip on your computer.
 
 In 'forest-windows64' launch forest-project.exe by clicking on it to play.
 
 ### 1.2 Mac OSX
 
-Download the zip with the game [here](https://drive.google.com/open?id=1z-Ep5Kwq5RcbGIM-JlVLDDj9Zol4g6vG) [1.00Gb] and unzip forest-mac-osx.zip on your computer.
+Download the zip with the game [here](https://raigyo-dev.be/downloads/a-forest/forest-mac-osx.zip) [1.00Gb] and unzip forest-mac-osx.zip on your computer.
 
 In 'forest-mac-osx' launch build-macsos.app by clicking on it to play.
 
@@ -38,7 +38,7 @@ Warning: It's not an approved Mac App Store application so you will have to sele
 
 ### 1.3 Linux x86_64
 
-Download the zip with the game [here](https://drive.google.com/open?id=14qKlgEXHS3Ig2xN-HV_RVtu_QQQz54Pt) [1.01Gb] and unzip build-linux_x86_64.zip on your computer.
+Download the zip with the game [here](https://raigyo-dev.be/downloads/a-forest/build-linux_x86_64.zip) [1.01Gb] and unzip build-linux_x86_64.zip on your computer.
 
 In 'build-linux_x86_64' launch forest-project.x86_64 (you will have to allow the file running as executable: right click on forest-project.x86_64 and chose Properties -> Permissions -> Allow executing file as program).
 
